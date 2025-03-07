@@ -3,9 +3,6 @@ from airflow.providers.common.sql.operators.sql import SQLExecuteQueryOperator
 from airflow import DAG
 from airflow.decorators import task 
 from airflow.operators.python import PythonOperator
-from airflow.operators.python import BranchPythonOperator
-from airflow.operators.bash import BashOperator
-from airflow.operators.dummy import DummyOperator
 
 import requests
 import json
