@@ -1,9 +1,3 @@
-#get police street crime api data#
-#convert JSON to dataframe#
-#save to CSV#
-#create SQL table#
-#load CSV file to db#
-
 from datetime import datetime, timedelta 
 from airflow.providers.common.sql.operators.sql import SQLExecuteQueryOperator
 from airflow import DAG
@@ -114,10 +108,6 @@ create_impt_police_street_crime >> create_d_street_crime_outcome
 create_d_street_crime_category >> create_f_police_street_crime
 create_d_street_crime_location >> create_f_police_street_crime
 create_d_street_crime_outcome >> create_f_police_street_crime
-
-
-#note doesn't like tuples with SQLExecute!
-#task_start >> [create_impt_police_street_crime, create_d_street_crime_location, create_d_street_crime_outcome]
 
 
 
