@@ -17,7 +17,7 @@ Hello, this is a personal data engineering project for me to experiment and lear
 
 ### Architecture Diagram
 
-![airflow architecture](images\police_architecture.png)
+![airflow architecture]
 
 ### Airflow Workflow
-![airflow workflow](images\police.png)
+![airflow workflow](https://github.com/jm-2oo/airflow/blob/main/images/police.png)
