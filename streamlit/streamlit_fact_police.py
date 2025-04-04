@@ -8,7 +8,7 @@ def load_query(filename):
         return f.read()
     
 #Load queries from SQL file
-fact_query = load_query('fact.sql')
+fact_query = load_query('fact_police.sql')
 
 #Use loaded query
 #Initialise connection
