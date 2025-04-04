@@ -8,10 +8,22 @@ def load_query(filename):
         return f.read()
     
 #Load queries from SQL file
-fact_query = load_query('fact.sql')
+fact_query = load_query('impt_police.sql')
 
 #Use loaded query
 #Initialise connection
 conn = st.connection('mysql', 'sql')
 df = conn.query(fact_query, ttl=600)
-st.table(df)
+
+st.title('impt')
+
+column_config={
+    "category": st.column_config.TextColumn(width="medium")
+}
+
+st.dataframe(
+    df,
+    column_config=column_config,
+    use_container_width=True, #configure text wrapping
+    hide_index=True
+)

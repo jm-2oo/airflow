@@ -1,0 +1,1 @@
+SELECT * FROM d_street_crime_outcome;
