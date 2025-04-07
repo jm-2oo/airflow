@@ -15,10 +15,13 @@ fact_query = load_query('f_police_raw.sql')
 conn = st.connection('mysql', 'sql')
 df = conn.query(fact_query, ttl=600)
 
-st.title('Fact Tbl')
+#Configure top text
+st.title('Fact Table')
+top_text = '''This is what the fact table looks in the data warehouse.  (-1 values means fact data couldn't join on to the dims).'''
+st.markdown(top_text)
 
 column_config={
-    "category": st.column_config.TextColumn(width="medium")
+    'category': st.column_config.TextColumn(width='medium')
 }
 
 st.dataframe(

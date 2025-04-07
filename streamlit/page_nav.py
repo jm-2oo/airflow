@@ -1,6 +1,5 @@
 import streamlit as st
 
-
 # Define pages with custom titles
 intro_page = st.Page("pages/intro.py", title="Intro", icon="🎈")
 page_1 = st.Page("pages/report_tbl_police.py", title="Report Table", icon="🎈")
