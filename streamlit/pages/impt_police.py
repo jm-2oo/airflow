@@ -15,10 +15,15 @@ fact_query = load_query('impt_police.sql')
 conn = st.connection('mysql', 'sql')
 df = conn.query(fact_query, ttl=600)
 
-st.title('impt')
+#Configure text
+st.title('Import Data')
 
+top_text = 'Raw data comes from data.police.uk API: \nhttps://data.police.uk/api/crimes-street/all-crime?date=2024-01&lat=52.629729&lng=-1.131592'
+st.markdown(top_text)
+
+#Configure column and dataframe
 column_config={
-    "category": st.column_config.TextColumn(width="medium")
+    'category': st.column_config.TextColumn(width='medium')
 }
 
 st.dataframe(
