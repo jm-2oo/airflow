@@ -15,9 +15,17 @@ Hello, this is a personal data engineering project for me to experiment and lear
 
 - The purpose of the ETL process is to extract the API data and convert into fact / dim tables in a SQL database to be used further on in BI reporting
 
+- I loaded sample data from my MySQL database in Streamlit: http://172.20.43.200:8501
+
 ### Architecture Diagram
 
 ![airflow architecture](https://github.com/jm-2oo/airflow/blob/main/images/police_architecture.png)
 
 ### Airflow Workflow
 ![airflow workflow](https://github.com/jm-2oo/airflow/blob/main/images/police.png)
+
+## What I learnt
+- From using Airflow I learnt a way of using Python in an ETL workflow.
+- How SQL queries can either be hardcoded or stored in a separate file and then executed with a Python script.
+- How to use Python connectors to connect to a MySQL database.
+- How transform and load API data from a JSON data type into a dataframe. 
