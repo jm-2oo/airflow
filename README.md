@@ -15,7 +15,10 @@ Hello, this is a personal data engineering project for me to experiment and lear
 
 - The purpose of the ETL process is to extract the API data and convert into fact / dim tables in a SQL database to be used further on in BI reporting
 
-- Streamlit app (under construction): https://jm-2oo-streamlit-police-page-nav-bgy9cx.streamlit.app 
+### Streamlit app 
+- (work in progress - looking to host MySQL db on public cloud infrastructure)
+- https://jm-2oo-streamlit-police-page-nav-bgy9cx.streamlit.app
+- Streamlit repo: https://github.com/jm-2oo/streamlit_police
 
 ### Architecture Diagram
 
