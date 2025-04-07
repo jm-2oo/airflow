@@ -1,1 +1,1 @@
-SELECT * FROM  d_street_crime_location; 
+SELECT * FROM  d_street_crime_location LIMIT 10; 
