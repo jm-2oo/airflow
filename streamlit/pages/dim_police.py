@@ -24,35 +24,27 @@ st.title('Dim Tables')
 top_text = 'The dimension tables are split into: Street Crime Category; Street Crime Location and Street Crime Outcome.'
 st.markdown(top_text)
 
-#Configure columns
-column_config={
-        'd_street_crime_category_ID': st.column_config.TextColumn('d_street_crime_category_ID', width='small'),
-        'street_crime_category': st.column_config.TextColumn('street_crime_category', width='medium')
-        }
-
 #Display Tables
 #Convert tables to Dataframe ie. df = 'table1'
 st.header('d_street_crime_category')
 st.dataframe(
     table1,
-    column_config=column_config,
     use_container_width=True, #configure text wrapping
-    hide_index=True #hide df index
+    hide_index=True, #hide df index
+    height=None
 )
 
 st.header('d_street_crime_location')
 st.dataframe(
     table2,
-    column_config=column_config,
     use_container_width=True, #configure text wrapping
-    hide_index=True #hide df index
+    hide_index=True, #hide df index
+    height=None
 )
 
 st.header('d_street_crime_outcome')
 st.dataframe(
     table3,
-    column_config=column_config,
     use_container_width=True, #configure text wrapping
     hide_index=True #hide df index
 )
-

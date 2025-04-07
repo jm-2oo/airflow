@@ -12,4 +12,5 @@ LEFT JOIN d_street_crime_outcome AS d
 ON a.FK_street_crime_outcome_statusID = d.d_street_crime_outcome_ID 
 WHERE 
 	FK_street_crime_outcome_statusID <> -1 
+ORDER BY RAND()
 LIMIT 10;
