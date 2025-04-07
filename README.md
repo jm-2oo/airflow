@@ -25,7 +25,7 @@ Hello, this is a personal data engineering project for me to experiment and lear
 ![airflow workflow](https://github.com/jm-2oo/airflow/blob/main/images/police.png)
 
 ## What I learnt
-- From using Airflow I learnt a way of using Python in an ETL workflow.
-- How SQL queries can either be hardcoded or stored in a separate file and then executed with a Python script.
-- How to use Python connectors to connect to a MySQL database.
-- How transform and load API data from a JSON data type into a dataframe. 
+- From using Airflow I learnt a way of using Python in an ETL workflow
+- How SQL queries can either be hardcoded or stored in a separate file and then executed with a Python script
+- How to use Python connectors to connect to a MySQL database
+- How transform and load API data from a JSON data type into a dataframe
